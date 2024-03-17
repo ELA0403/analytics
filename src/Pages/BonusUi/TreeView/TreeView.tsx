@@ -1,0 +1,21 @@
+import { Container, Row } from "reactstrap";
+import Breadcrumbs from "../../../CommonElements/Breadcrumbs/Breadcrumbs";
+import { BonusUi, TreeViews } from "../../../utils/Constant";
+import BasicTree from "./BasicTree/BasicTree";
+import DisabledTree from "./DisabledTree/DisabledTree";
+
+const TreeView = () => {
+  return (
+    <>
+      <Breadcrumbs mainTitle={TreeViews} parent={BonusUi} title={TreeViews} />
+      <Container fluid>
+        <Row>
+          <BasicTree />
+          <DisabledTree />
+        </Row>
+      </Container>
+    </>
+  );
+};
+
+export default TreeView;
